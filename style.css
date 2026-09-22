@@ -5,9 +5,9 @@
 }
 
 :root{
-    --color_1: #3b2762;
-    --color_2: #1c1a5a;
-    --padding: 20px;
+    --color_1: #45208e;
+    --color_2: #3b1a5a;
+    --padding: 50px;
     --font-size: 1.5rem;
     --radius: 6rem;
     --distance: 850px;
@@ -16,7 +16,7 @@
 }
 
 body{
-    height:100dvh;
+    min-height:100dvh;
     display:flex;
     flex-direction: column;
     justify-content:center;
@@ -27,6 +27,17 @@ body{
 
 header{
     background: var(--color_2);
+    color: white;
+    display:flex;
+    justify-content: center;
+    font-size: 70px;
+    
+}
+
+nav{
+    color: white;
+    display:flex;
+    justify-content: center;
 }
 
 main{
@@ -34,9 +45,11 @@ main{
     display:flex;
     flex-direction: column;
     background: var(--color_1);
+    background:radial-gradien(var(--color_2)), var(--color_1));
 }
 
 section{
     color:white;
     padding: var(--padding)
+    
 }
