@@ -7,10 +7,13 @@
 :root{
     --color_1: #45208e;
     --color_2: #3b1a5a;
+    --color_3: #421634;
     --padding: 50px;
     --font-size: 1.5rem;
-    --radius: 6rem;
-    --distance: 850px;
+    --radius: 40px;
+    --heigt: 6rem;
+    --width: 80%;
+    --font: sans-serif;
 
 
 }
@@ -21,7 +24,7 @@ body{
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    font-family: sans-serif;
+    font-family: var(--font);
     font-size: var(--font-size)
 }
 
@@ -31,25 +34,60 @@ header{
     display:flex;
     justify-content: center;
     font-size: 70px;
-    
+    height: var(--heigt); 
+    padding: 0.5rem;
+}
+
+ol{
+    margin-left: 3ch;
+}
+
+ul{
+    margin-left: 3ch
 }
 
 nav{
     color: white;
     display:flex;
     justify-content: center;
+    
 }
 
 main{
-    width:80%;
+    width: var(--width);
     display:flex;
     flex-direction: column;
     background: var(--color_1);
     background:radial-gradien(var(--color_2)), var(--color_1));
 }
 
+form{
+    display:flex;
+    flex-direction: column;
+}
+
 section{
     color:white;
     padding: var(--padding)
     
+}
+
+[type="submit"]{
+    color: var(--color_3);
+    background: #efe9e9;
+    border-radius: var(--radius);
+    width: 50px;
+
+}
+
+input{
+    width: 30rem;
+}
+
+footer{
+    width:80%;
+    background: var(--color_2);
+    color: white;
+    display:flex;
+    justify-content: center;
 }
